@@ -223,7 +223,7 @@ class repository implements Iterator, ArrayAccess
         // TODO: Implement offsetGet() method.
         $name = $this->name;
 
-        $result = mysqli_fetch_assoc( $name::fromId( $this->arrIDs[$offset] ) );
+        $result = mysqli_fetch_assoc( $name::fromId( $offset ) );
 
         return $result;
     }
